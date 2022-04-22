@@ -168,14 +168,13 @@ p.text {
     vertical-align: top;
 }
 
-video {
+iframe {
     padding: 20px;
     margin: 0 auto;
     display: block;
 }
 
 footer {
-    background-color: #F0F0F0;
     margin-top: 20px;
     padding: 10px;
 }
@@ -224,6 +223,18 @@ footer {
 
     .video {
         clear: both;
+    }
+
+    iframe {
+        float: left;
+    }
+
+    .icon, .NKMedia {
+        clear: both;
+    }
+
+    .NKMedia {
+        color: #B38B59;
     }
 
 }
