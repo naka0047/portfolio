@@ -1,0 +1,229 @@
+body {
+    color:#113e21;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    position: relative;
+}
+
+h1 {
+    font-size: 80px;
+    color: #113e21;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    right: 3%;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color:#113e21;
+}
+
+.aboutme {
+    text-align: center;
+}
+
+.me {
+    position: relative;
+    margin-top: auto;
+    padding: 20px;
+}
+
+.text {
+    position: relative;
+    top: -80px;
+    font-size: 35px;
+    color: #111111;
+    padding: 20px;
+}
+
+.photography img {
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.skiplinks li {
+    position: relative;
+    margin-top: 45px;
+    list-style: none;
+    display: inline-block;
+    height: 50px;
+    padding: 0 10px;
+}
+  
+.skiplinks li a {
+    text-decoration: none;
+    color: #111;
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    font-weight: bold;
+    padding: 0 10px;
+    transition: .3s;
+}
+
+.skiplinks li a:hover {
+    color: #B38B59;
+}
+
+.skiplinks li a::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0%;
+    background: #B38B59;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transition: .3s;
+}
+  
+.skiplinks li a:hover {
+    color: #B38B59;
+}
+  
+.skiplinks li a:hover::after {
+    width: 80%;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+
+.icon li {
+    list-style: none;
+    float: left;
+    margin: 0 8px 8px 0;
+    padding: 0;
+}
+
+.icon li a::before {
+    background-color: #eee;
+    -webkit-border-radius: 2px;
+    border-radius: 50%;
+    color: #111111;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    width: 50px;
+}
+
+.icon li a:hover::before {
+    color: #fff;
+}
+
+.icon li a[href*="twitter.com"]::before {
+    content: "\f099";
+}
+
+.icon li a[href*="twitter.com"]:hover::before {
+    background-color: #55acee;
+}
+
+.icon li a[href*="instagram.com"]::before {
+    content: "\f16d";
+}
+
+.icon li a[href*="instagram.com"]:hover::before {
+    background-color: #CF2E92;
+}
+
+.icon li a[href*="facebook.com"]::before {
+    content: "\f09a";
+}
+
+.icon li a[href*="facebook.com"]:hover::before {
+    background-color: #3b5998;
+}
+
+img.me {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+p.text {
+    display: inline-block;
+    width: 500px;
+    margin-left: 20px;
+    margin-top: 10%;
+    vertical-align: top;
+}
+
+video {
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    background-color: #F0F0F0;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.NKMedia {
+    position: relative;
+    bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: #2f2f2f;
+    }
+
+    h1, h2 {
+        color:#B38B59;
+    }
+
+    .text {
+        position: relative;
+        top: -80px;
+        font-size: 35px;
+        color: #f1f1f1;
+        padding: 20px;
+    }
+
+    .skiplinks li a {
+        text-decoration: none;
+        color: #f1f1f1;
+        display: block;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: .3s;
+        font-weight: bold;
+        padding: 0 10px;
+        transition: .3s;
+    }
+
+    .photography img {
+        width: 330px;
+        float: left;
+        position: relative;
+        padding-left: 3%;
+    }
+
+    .video {
+        clear: both;
+    }
+
+}
